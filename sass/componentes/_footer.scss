@@ -1,0 +1,24 @@
+.footer{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 3em 0;
+    background-color: $Color-negro;
+    &__title{
+        color: $Color-azul-primario;
+        font-weight: 400;
+    }
+    .socialMedia{
+        display: flex;
+        width: 10em;
+        justify-content: space-between;
+    }
+    .rights{
+        color: $Color-blanco;
+        font-size: 1.3em;
+    }
+}

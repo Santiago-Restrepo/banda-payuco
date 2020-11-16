@@ -1,0 +1,70 @@
+@import url('//db.onlinewebfonts.com/c/50eafd25cbb5f88fe7bb5cc77421bb49?family=Freestyle+Script');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+$Fuente1: 'Freestyle Script', sans-serif;
+$Fuente2: 'Rubik', sans-serif;
+$Color-azul-primario: #33B5B0;
+$Color-amarillo-primario: #FED031;
+$Color-morado-primario: #8F3088;
+$Color-negro: #141414;
+$Color-negro-claro: #313131;
+$Color-gris-oscuro: #545454;
+$Color-gris: #7F7F7F;
+$Color-gris-claro: #BCBCBC;
+$Color-blanco-claro: #E9E9E9;
+$Color-blanco: #FBFAEC;
+$break-mobile-M: 375px;
+$break-mobile-L: 425px;
+$break-mobile-tablet: 597px;
+$break-tablet: 768px;
+$break-laptop: 1024px;
+$break-laptop-L: 1440px;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html{
+    font-size: 62.5%;
+    position: relative;
+}
+
+h1,h2,h3{
+    font-family: $Fuente1;
+}
+
+h4,h5,h6,p,a,span,button,input,small{
+    font-family: $Fuente2;
+}
+
+h1{
+    font-size: 4em;
+}
+
+h2{
+    font-size: 3.5em;
+}
+
+h3{
+    font-size: 1.8em;
+}
+
+h4{
+    font-size: 1.6em;
+}
+
+h5{
+    font-size: 1.4em;    
+}
+
+h6{
+    font-size: 1.2em;
+}
+
+p,a{
+    font-size: 1.5em;
+}
+
+

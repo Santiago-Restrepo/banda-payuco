@@ -1,0 +1,75 @@
+@import url("//db.onlinewebfonts.com/c/50eafd25cbb5f88fe7bb5cc77421bb49?family=Freestyle+Script");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  position: relative;
+}
+
+h1, h2, h3 {
+  font-family: "Freestyle Script", sans-serif;
+}
+
+h4, h5, h6, p, a, span, button, input, small {
+  font-family: "Rubik", sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3.5em;
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+h4 {
+  font-size: 1.6em;
+}
+
+h5 {
+  font-size: 1.4em;
+}
+
+h6 {
+  font-size: 1.2em;
+}
+
+p, a {
+  font-size: 1.5em;
+}
+
+.whoAreThey {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  padding: 5em 2em;
+}
+.whoAreThey__image {
+  width: 22em;
+  height: 22em;
+  margin-bottom: 3em;
+  border-radius: 100em;
+  background-image: url("../images/home_main_image.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.whoAreThey__title {
+  color: #8F3088;
+  margin-bottom: 1em;
+  font-weight: 500;
+}
+.whoAreThey__description {
+  font-weight: 400;
+  color: #313131;
+}

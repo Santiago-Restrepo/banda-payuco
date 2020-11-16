@@ -1,0 +1,46 @@
+.hamburguer__menu{
+    position: absolute;
+    top: 15;
+    left: 10;
+}
+
+.header{
+    width: 100vw;
+    height: 13vh;
+    background-color: $Color-negro;
+    .navbar{
+        position: absolute;
+        top: -25vh;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 25vh;
+        background-color: #313131ee;
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            text-decoration: none;
+            li{
+                width: 100%;
+                height: 2.5em;
+                text-align: center;
+                a{
+                    font-size: 1.3em;
+                    text-decoration: none;
+                    color: $Color-blanco; 
+                }
+            }
+
+        }
+
+    }
+
+    .is-active{
+        top: 13vh;
+    }
+    
+}
