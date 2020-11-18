@@ -12,6 +12,7 @@ $Color-gris: #7F7F7F;
 $Color-gris-claro: #BCBCBC;
 $Color-blanco-claro: #E9E9E9;
 $Color-blanco: #FBFAEC;
+$break-mobile-S: 320px;
 $break-mobile-M: 375px;
 $break-mobile-L: 425px;
 $break-mobile-tablet: 597px;
@@ -27,7 +28,6 @@ $break-laptop-L: 1440px;
 }
 
 html{
-    font-size: 62.5%;
     position: relative;
 }
 
@@ -40,7 +40,7 @@ h4,h5,h6,p,a,span,button,input,small{
 }
 
 h1{
-    font-size: 3.8em;
+    font-size: 4em;
 }
 
 h2{
@@ -48,7 +48,7 @@ h2{
 }
 
 h3{
-    font-size: 1.8em;
+    font-size: 1em;
 }
 
 h4{
@@ -63,8 +63,12 @@ h6{
     font-size: 1.2em;
 }
 
-p,a{
+p{
     font-size: 1.5em;
+}
+
+a{
+    font-size: 1.2em;
 }
 
 

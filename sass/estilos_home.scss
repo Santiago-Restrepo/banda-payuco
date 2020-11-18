@@ -22,7 +22,17 @@
         font-weight: 500;
     }
     &__description{
+        text-align: center;
         font-weight: 400;
         color: $Color-negro-claro;
+    }
+}
+
+@media only screen and (min-width: $break-mobile-tablet){
+
+    .whoAreThey{
+        &__description{
+            width: 30em;   
+        }
     }
 }

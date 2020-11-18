@@ -3,9 +3,14 @@
 @import "componentes/hero";
 @import "componentes/footer";
 
+@media only screen and (min-width: $break-mobile-S){
+    html{
+        font-size: 62.5%;
+    }   
+}
 @media only screen and (min-width: $break-mobile-M){
     html{
-        font-size: 69%;
+        font-size: 62.5%;
     }   
 }
 
@@ -19,16 +24,62 @@
     html{
         font-size: 73%;
     }
+    .hamburguer__menu{
+        display: none;
+    }
+
+    .header{
+        display: flex;
+        justify-content: center;
+        .navbar{
+            position: relative;
+            top: 13vh;
+            width: 60em;
+            height: 8em;
+            border-radius: 0 0 5em 5em;
+            ul{
+                flex-direction: row;
+                li{
+                    box-sizing: border-box;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    width: 100%;
+                    
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 100%;
+                        width: 100%;
+                    }
+                    
+                }
+                .active-page{
+                    border-bottom: #E9E9E9 5px solid;
+                }
+            }
+        }
+
+    }
     
 }
 @media only screen and (min-width: $break-tablet){
     html{
         font-size: 74%;
     }
+
+    .header{
+        .navbar{
+            height: 6em;
+        }
+
+    }
 }
 
 @media only screen and (min-width: $break-laptop){
     html{
-        font-size: 75%;
+        font-size: 78%;
     }
 }
