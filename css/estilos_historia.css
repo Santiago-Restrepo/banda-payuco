@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  background-color: #FBFAEC;
+}
+
+html {
+  position: relative;
+}
+
+h1, h2 {
+  font-family: "Bad Script", sans-serif;
+}
+
+h3, h4, h5, h6, p, a, span, button, input, small {
+  font-family: "Rubik", sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3.5em;
+}
+
+h3 {
+  font-size: 2.8em;
+}
+
+h4 {
+  font-size: 1.6em;
+}
+
+h5 {
+  font-size: 1.4em;
+}
+
+h6 {
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+a {
+  font-size: 1.2em;
+}
+
+.historyMain__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3.5em;
+  padding-bottom: 3em;
+  width: 30em;
+  height: 35em;
+  border-radius: 1.5em;
+}
+.historyMain__card__image {
+  width: 100%;
+  border-radius: 1.5em 1.5em 0 0;
+}
+.historyMain__card__title {
+  font-weight: 300;
+  font-style: italic;
+  color: #FBFAEC;
+}
+.historyMain__card__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8em;
+  height: 2.3em;
+  background-color: #FBFAEC;
+  color: #141414;
+  font-size: 2em;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 2em;
+}
+
+@media only screen and (min-width: 768px) {
+  .historyMain__card {
+    width: 28em;
+    height: 33em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .historyMain__card {
+    width: 30em;
+    height: 35em;
+  }
+}
+.historyMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/fondo1.png");
+}
+.historyMain__title {
+  margin: 0.5em 0;
+  color: #141414;
+}
+.historyMain__card:nth-of-type(1) {
+  background-color: #8F3088;
+}
+.historyMain__card:nth-of-type(2) {
+  background-color: #33B5B0;
+}
+
+@media only screen and (min-width: 597px) {
+  .historyMain__title {
+    margin-top: 3em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .historyMain__content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 65em;
+  }
+}
