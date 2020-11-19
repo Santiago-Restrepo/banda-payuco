@@ -43,6 +43,21 @@
       <h1 class="footer__title">Contáctanos</h1>
       <nav class="socialMedia"><span><a href="https://www.facebook.com/Bandapayuco"><img src="images/logo-de-facebook.svg" alt=""/></a></span><span><a href="https://www.instagram.com/corporacionbandadepayuco/?hl=es-la"><img src="images/logotipo-de-instagram.svg" alt=""/></a></span></nav><span class="rights">© Trabajo de grado Banda Payuco</span>
     </footer>
-    <script src="js/menu.js"></script>
+    <script>
+      const $menu = document.querySelector('.navbar');
+      const $button = document.querySelector('.hamburguer__menu > img');
+      
+      $button.addEventListener('click',hideshow);
+      
+      function hideshow(){
+          if($menu.classList.contains('is-active')){
+              $menu.classList.remove('is-active');
+              $button.setAttribute('src', 'images/menu.svg')
+          }else{
+              $menu.classList.add('is-active');
+              $button.setAttribute('src', 'images/boton-eliminar.svg')
+          }
+      }
+    </script>
   </body>
 </html>
