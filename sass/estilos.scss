@@ -10,19 +10,19 @@
 }
 @media only screen and (min-width: $break-mobile-M){
     html{
-        font-size: 62.5%;
+        font-size: 63%;
     }   
 }
 
 @media only screen and (min-width: $break-mobile-L){
     html{
-        font-size: 71%;
+        font-size: 64%;
     }
     
 }
 @media only screen and (min-width: $break-mobile-tablet){
     html{
-        font-size: 73%;
+        font-size: 65%;
     }
     .hamburguer__menu{
         display: none;
@@ -67,7 +67,7 @@
 }
 @media only screen and (min-width: $break-tablet){
     html{
-        font-size: 74%;
+        font-size: 67%;
     }
 
     .header{
@@ -80,6 +80,6 @@
 
 @media only screen and (min-width: $break-laptop){
     html{
-        font-size: 78%;
+        font-size: 68%;
     }
 }

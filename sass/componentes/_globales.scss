@@ -26,12 +26,14 @@ $break-laptop-L: 1440px;
     padding: 0;
     outline: none;
 }
-body{
-    background-color: $Color-blanco;
-}
 
 html{
     position: relative;
+    width: 100vw;
+    overflow-x: hidden;
+}
+body{
+    background-color: $Color-blanco;
 }
 
 h1,h2{
