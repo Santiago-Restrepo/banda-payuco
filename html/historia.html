@@ -11,10 +11,10 @@
     <Header class="header">
       <nav class="navbar">
         <ul>
-          <li><a href="desarrollo_trabajo.html">DESARROLLO DEL TRABAJO</a></li>
-          <li><a href="historia.html">HISTORIA</a></li>
-          <li><a href="tradicion_religiosa.html">TRADICIÓN RELIGIOSA</a></li>
-          <li><a href="corporacion_cultural.html">CORPORACIÓN CULTURAL</a></li>
+          <li class="desarrollo__button"><a href="desarrollo_trabajo.html">DESARROLLO DEL TRABAJO</a></li>
+          <li class="historia__button"><a href="historia.html">HISTORIA</a></li>
+          <li class="religion__button"><a href="tradicion_religiosa.html">TRADICIÓN RELIGIOSA</a></li>
+          <li class="corporacion__button"><a href="corporacion_cultural.html">CORPORACIÓN CULTURAL</a></li>
         </ul>
       </nav>
     </Header>
@@ -34,5 +34,12 @@
       <nav class="socialMedia"><span><a href="https://www.facebook.com/Bandapayuco"><img src="../images/logo-de-facebook.svg" alt=""/></a></span><span><a href="https://www.instagram.com/corporacionbandadepayuco/?hl=es-la"><img src="../images/logotipo-de-instagram.svg" alt=""/></a></span></nav><span class="rights">© Trabajo de grado Banda Payuco</span>
     </footer>
     <script src="../js/menu.js"> </script>
+    <script>
+      const $BUTTON_ACTIVE =document.querySelector('.historia__button')
+      function active_button(){
+          $BUTTON_ACTIVE.classList.add('active-page');
+      }
+      active_button();
+    </script>
   </body>
 </html>

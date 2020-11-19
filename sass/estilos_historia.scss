@@ -9,6 +9,7 @@
     justify-content: center;
     align-items: center;
     background-image: url("../images/fondo1.png");
+    background-attachment: fixed;
     &__title{
         margin: .5em 0;
         color: $Color-negro;
