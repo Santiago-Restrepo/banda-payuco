@@ -65,15 +65,18 @@
         width: 50px;
     }
     .container{
+        
         .row{
             .col{
                 .traditionCarousel__title{
                     color: $Color-blanco;
+                    margin-bottom: 2em;
                 }
                 .carousel{
-                    height: 42em;
+                    height: 36em;
                     &-item{
-                        width: 25em;
+                        height: fit-content;
+                        width: 95%;
                     }
                 }
             }
