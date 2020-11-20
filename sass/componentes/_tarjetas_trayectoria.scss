@@ -1,0 +1,60 @@
+@import "componentes/globales";
+
+
+.storytellingCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 38em;
+    height: fit-content;
+    padding-top: 2.5em;
+    margin-bottom: 2em;
+    background-color: $Color-negro;
+    border-radius: 1.4em;
+    
+    &__title{
+        margin-bottom: 1em;
+        font-weight: 500;
+        color: $Color-amarillo-primario;
+    }
+    &__subtitle{
+        font-weight: 400;
+        color: $Color-azul-primario;
+        margin-bottom: 1em;
+    }
+    &__video{
+        width: 100%;
+        height: auto;
+        border-radius: 0 0 1.4em 1.4em;
+        iframe{
+            width: 100%;
+            border-radius: 0 0 1.4em 1.4em;
+            height: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: $break-mobile-M){
+
+    .storytellingCard{
+        &__video{
+            height: 25em;
+        }
+    }
+}
+@media only screen and (min-width: $break-tablet){
+    .storytellingCard{
+        width: 60%;
+        max-width: 80em;
+    }
+}
+@media only screen and (min-width: $break-laptop){
+    .storytellingCard{
+        &__video{
+            height: 30em;
+            
+        }
+    }
+}
