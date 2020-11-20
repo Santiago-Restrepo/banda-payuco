@@ -27,7 +27,7 @@ h3, h4, h5, h6, p, a, span, button, input, small {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 3.8em;
 }
 
 h2 {
@@ -84,7 +84,7 @@ h3, h4, h5, h6, p, a, span, button, input, small {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 3.8em;
 }
 
 h2 {
@@ -195,6 +195,7 @@ a {
 }
 .trajectoryMain__container-parraph {
   margin-bottom: 1.5em;
+  line-height: 1.4em;
 }
 .trajectoryMain__container-img {
   width: 100%;

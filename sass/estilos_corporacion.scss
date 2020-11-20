@@ -1,6 +1,6 @@
 @import "componentes/globales";
 
-.heritageMain{
+.corporationMain{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,27 +14,26 @@
         color: $Color-amarillo-primario;
     }
     &__description{
-        font-weight: 400;
-        text-align: center;
-        color: $Color-gris-morado;
         margin-bottom: 3em;
+        font-weight: 300;
+        text-align: center;
+        color: $Color-blanco;
         line-height: 1.4em;
-        
     }
     
-    img{
+    iframe{
         width: 100px;
     }
 }
 
 @media only screen and (min-width: $break-mobile-tablet){
-    .heritageMain{
+    .corporationMain{
         &__title{
             margin-top: 2em;
         }
         &__description{
-            width: 70%;
-            max-width: 40em;
+            width: 85%;
+            max-width: 50em;
         }
     }
 }

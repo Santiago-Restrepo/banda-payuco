@@ -25,7 +25,7 @@ h3, h4, h5, h6, p, a, span, button, input, small {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 3.8em;
 }
 
 h2 {
@@ -76,6 +76,7 @@ a {
   text-align: center;
   color: #baa7b8;
   margin-bottom: 3em;
+  line-height: 1.4em;
 }
 .heritageMain img {
   width: 100px;
@@ -83,7 +84,7 @@ a {
 
 @media only screen and (min-width: 597px) {
   .heritageMain__title {
-    margin-top: 3em;
+    margin-top: 2em;
   }
   .heritageMain__description {
     width: 70%;

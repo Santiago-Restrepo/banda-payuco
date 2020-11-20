@@ -57,7 +57,7 @@ a {
   font-size: 1.2em;
 }
 
-.audioVisualMain {
+.traditionMain {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,33 +66,40 @@ a {
   background-image: url("../images/fondo1.png");
   background-attachment: fixed;
 }
-.audioVisualMain__title {
+.traditionMain__title {
   margin-bottom: 1em;
   text-align: center;
   color: #8F3088;
 }
-.audioVisualMain__description {
+.traditionMain__description {
   font-weight: 400;
-  text-align: center;
-  color: #141414;
+  color: #baa7b8;
   margin-bottom: 3em;
+}
+.traditionMain__description p {
   line-height: 1.4em;
 }
-.audioVisualMain iframe {
+.traditionMain img {
   width: 100px;
 }
 
 @media only screen and (min-width: 597px) {
-  .audioVisualMain__title {
-    margin-top: 3em;
+  .traditionMain__title {
+    margin-top: 2em;
   }
-  .audioVisualMain__description {
-    width: 70%;
-    max-width: 40em;
+  .traditionMain__description {
+    width: 85%;
+    max-width: 60em;
   }
 }
-@media only screen and (min-width: 768px) {
-  .audioVisualMain__description {
-    font-size: 1.8em;
+@media only screen and (min-width: 1024px) {
+  .traditionMain__description {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 85em;
+  }
+  .traditionMain__description p {
+    margin: 1em;
   }
 }

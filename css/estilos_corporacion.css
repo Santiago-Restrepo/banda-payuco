@@ -57,42 +57,37 @@ a {
   font-size: 1.2em;
 }
 
-.audioVisualMain {
+.corporationMain {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 4em 2.5em;
-  background-image: url("../images/fondo1.png");
+  background-image: url("../images/fondo2.png");
   background-attachment: fixed;
 }
-.audioVisualMain__title {
+.corporationMain__title {
   margin-bottom: 1em;
   text-align: center;
-  color: #8F3088;
+  color: #FED031;
 }
-.audioVisualMain__description {
-  font-weight: 400;
-  text-align: center;
-  color: #141414;
+.corporationMain__description {
   margin-bottom: 3em;
+  font-weight: 300;
+  text-align: center;
+  color: #FBFAEC;
   line-height: 1.4em;
 }
-.audioVisualMain iframe {
+.corporationMain iframe {
   width: 100px;
 }
 
 @media only screen and (min-width: 597px) {
-  .audioVisualMain__title {
-    margin-top: 3em;
+  .corporationMain__title {
+    margin-top: 2em;
   }
-  .audioVisualMain__description {
-    width: 70%;
-    max-width: 40em;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .audioVisualMain__description {
-    font-size: 1.8em;
+  .corporationMain__description {
+    width: 85%;
+    max-width: 50em;
   }
 }
