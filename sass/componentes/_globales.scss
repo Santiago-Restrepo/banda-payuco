@@ -6,7 +6,7 @@ $Color-azul-primario: #33B5B0;
 $Color-amarillo-primario: #FED031;
 $Color-morado-primario: #8F3088;
 $Color-negro: #141414;
-$Color-negro-claro: #313131;
+$Color-negro-claro: #3A3A3A;
 $Color-gris-oscuro: #545454;
 $Color-gris: #7F7F7F;
 $Color-gris-claro: #BCBCBC;
@@ -69,7 +69,8 @@ h6{
 }
 
 p{
-    font-size: 1.5em;
+    font-size: 1.6em;
+    color: $Color-negro-claro;
 }
 
 a{
