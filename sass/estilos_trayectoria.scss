@@ -71,7 +71,10 @@
                     color: $Color-blanco;
                 }
                 .carousel{
-                    height: 34em;
+                    height: 42em;
+                    &-item{
+                        width: 25em;
+                    }
                 }
             }
         }
