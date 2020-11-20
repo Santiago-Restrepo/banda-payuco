@@ -57,36 +57,41 @@ a {
   font-size: 1.2em;
 }
 
-.heritageMain {
+.audioVisualMain {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 4em 2.5em;
-  background-image: url("../images/fondo2.png");
+  background-image: url("../images/fondo1.png");
   background-attachment: fixed;
 }
-.heritageMain__title {
+.audioVisualMain__title {
   margin-bottom: 1em;
   text-align: center;
-  color: #FED031;
+  color: #8F3088;
 }
-.heritageMain__description {
+.audioVisualMain__description {
   font-weight: 400;
   text-align: center;
-  color: #baa7b8;
+  color: #141414;
   margin-bottom: 3em;
 }
-.heritageMain img {
+.audioVisualMain iframe {
   width: 100px;
 }
 
 @media only screen and (min-width: 597px) {
-  .heritageMain__title {
+  .audioVisualMain__title {
     margin-top: 3em;
   }
-  .heritageMain__description {
+  .audioVisualMain__description {
     width: 70%;
     max-width: 40em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .audioVisualMain__description {
+    font-size: 1.8em;
   }
 }
