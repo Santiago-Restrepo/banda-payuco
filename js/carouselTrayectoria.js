@@ -1,8 +1,11 @@
-document.addEventListener('DOMContentLoaded', ()=>{
-    const elementosCarousel= document.querySelectorAll('.carousel');
-    M.Carousel.init(elementosCarousel, {
-        duration: 1500,
-        shift: 5
-        
-    });
-})
+window.addEventListener('load', ()=>{
+	new Glider(document.querySelector('.carousel__lista'), {
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: '.carousel__indicadores',
+		arrows: {
+			prev: '.carousel__anterior',
+			next: '.carousel__siguiente'
+        }
+    }
+)});

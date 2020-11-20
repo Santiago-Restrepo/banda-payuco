@@ -180,7 +180,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5em 2.5em;
+  padding: 4em 2.5em;
 }
 .trajectoryMain__title {
   margin-bottom: 1em;
@@ -234,19 +234,6 @@ a {
 }
 .storyTelling img {
   width: 50px;
-}
-.storyTelling .container .row .col .traditionCarousel__title {
-  color: #FBFAEC;
-  margin-bottom: 2em;
-}
-.storyTelling .container .row .col .carousel {
-  height: 36em;
-}
-.storyTelling .container .row .col .carousel-item {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: 95%;
 }
 
 @media only screen and (min-width: 597px) {
