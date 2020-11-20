@@ -64,6 +64,18 @@
     img{
         width: 50px;
     }
+    .container{
+        .row{
+            .col{
+                .traditionCarousel__title{
+                    color: $Color-blanco;
+                }
+                .carousel{
+                    height: 34em;
+                }
+            }
+        }
+    }
 }
 
 
