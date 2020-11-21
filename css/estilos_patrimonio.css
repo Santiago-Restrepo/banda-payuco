@@ -78,8 +78,48 @@ a {
   margin-bottom: 3em;
   line-height: 1.4em;
 }
-.heritageMain img {
-  width: 100px;
+.heritageMain .carousel::-webkit-scrollbar {
+  height: 1em;
+  padding: 0.1em 0;
+  border-radius: 1em;
+  background-color: #baa7b8;
+}
+.heritageMain .carousel::-webkit-scrollbar-thumb {
+  border-radius: 1em;
+  background-color: #8F3088;
+}
+.heritageMain .carousel {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 90%;
+  max-width: 90em;
+  padding: 3em;
+  overflow: scroll;
+  overflow-y: hidden;
+}
+.heritageMain .carousel__container {
+  width: 100%;
+  white-space: nowrap;
+  padding: 0 2em 1em;
+}
+.heritageMain .carousel__container .carousel-item {
+  display: inline-block;
+  margin-right: 1em;
+  max-width: 30em;
+  width: 100%;
+  background-color: lightcoral;
+  overflow: hidden;
+  transition: 0.5s all;
+  transform-origin: center left;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-user-select: none;
+          user-select: none;
+}
+.heritageMain .carousel__container .carousel-item img {
+  width: 100%;
 }
 
 @media only screen and (min-width: 597px) {
@@ -89,5 +129,18 @@ a {
   .heritageMain__description {
     width: 70%;
     max-width: 40em;
+  }
+  .heritageMain .carousel__container {
+    margin: 8em 0;
+  }
+  .heritageMain .carousel__container .carousel-item:hover ~ .carousel-item {
+    transform: translate3d(10em, 0, 0);
+  }
+  .heritageMain .carousel__container:hover .carousel-item {
+    opacity: 0.3;
+  }
+  .heritageMain .carousel__container:hover .carousel-item.carousel-item:hover {
+    transform: scale(1.5);
+    opacity: 1;
   }
 }

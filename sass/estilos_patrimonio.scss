@@ -21,10 +21,60 @@
         line-height: 1.4em;
         
     }
-    
-    img{
-        width: 100px;
+    .carousel::-webkit-scrollbar{
+        height: 1em;
+        padding: .1em 0;
+        border-radius: 1em;
+        background-color: $Color-gris-morado;
     }
+    .carousel::-webkit-scrollbar-thumb{
+        border-radius: 1em;
+        background-color: $Color-morado-primario;
+    }
+    .carousel{
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 90%;
+        max-width: 90em;
+        padding: 3em;
+        overflow: scroll;
+        overflow-y: hidden;
+        &__container{
+            width: 100%;
+            white-space: nowrap;
+            padding: 0 2em 1em;            
+            .carousel-item{
+                display: inline-block;
+                margin-right: 1em;
+                max-width: 30em;
+                width: 100%;
+                background-color: lightcoral;
+                overflow: hidden;
+                transition: .5s all;
+                transform-origin: center left;
+                height: fit-content;
+                user-select: none;
+                img{
+                    width: 100%;
+                }
+            }
+            // .carousel-item:hover ~ .carousel-item{
+            //     transform: translate3d(10em, 0, 0);
+            // }
+        }
+        // &__container:hover .carousel-item{
+        //     opacity: 0.3;
+        // }
+        // &__container:hover .carousel-item.carousel-item:hover{
+        //     transform: scale(1.5);
+        //     opacity: 1;
+        // }
+    }
+    
+    // img{
+    //     width: 100px;
+    // }
 }
 
 @media only screen and (min-width: $break-mobile-tablet){
@@ -35,6 +85,21 @@
         &__description{
             width: 70%;
             max-width: 40em;
+        }
+        .carousel{
+            &__container{
+                margin: 8em 0;
+                .carousel-item:hover ~ .carousel-item{
+                    transform: translate3d(10em, 0, 0);
+                }
+            }
+            &__container:hover .carousel-item{
+                opacity: 0.3;
+            }
+            &__container:hover .carousel-item.carousel-item:hover{
+                transform: scale(1.5);
+                opacity: 1;
+            }
         }
     }
 }
