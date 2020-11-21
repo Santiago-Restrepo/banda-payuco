@@ -36,7 +36,7 @@
         align-items: center;
         position: relative;
         width: 90%;
-        max-width: 90em;
+        max-width: 100em;
         padding: 3em;
         overflow: scroll;
         overflow-y: hidden;
@@ -44,6 +44,7 @@
             width: 100%;
             white-space: nowrap;
             padding: 0 2em 1em;            
+            user-select: none;
             .carousel-item{
                 display: inline-block;
                 margin-right: 1em;
@@ -58,6 +59,10 @@
                 img{
                     width: 100%;
                 }
+            }
+            .carousel-item:last-of-type{
+                transform-origin: center right;
+
             }
             // .carousel-item:hover ~ .carousel-item{
             //     transform: translate3d(10em, 0, 0);
