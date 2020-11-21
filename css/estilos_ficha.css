@@ -91,7 +91,7 @@ a {
   grid-template-columns: repeat(4, 100%);
   gap: 1em;
   align-items: end;
-  max-width: 60em;
+  max-width: 80em;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -100,20 +100,36 @@ a {
   scroll-snap-type: x mandatory;
   padding-bottom: 2em;
 }
-.techniqueMain .carousel-item {
-  position: relative;
-  scroll-snap-align: center;
+.techniqueMain .carousel__container {
   width: 100%;
+  white-space: nowrap;
+  padding: 0 2em 1em;
+  -webkit-user-select: none;
+          user-select: none;
+  scroll-snap-type: x mandatory;
+}
+.techniqueMain .carousel__container .carousel-item {
+  scroll-snap-align: center;
+  position: relative;
+  display: inline-block;
+  margin-right: 1em;
+  max-width: 30em;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.5s all;
+  transform-origin: center left;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  -webkit-user-select: none;
+          user-select: none;
+  box-shadow: 0 1em 5em #33B5B0;
 }
-.techniqueMain .carousel-item__image {
-  position: relative;
+.techniqueMain .carousel__container .carousel-item__image {
   z-index: 1;
   width: 100%;
 }
-.techniqueMain .carousel-item__container {
+.techniqueMain .carousel__container .carousel-item__container {
   box-sizing: border-box;
   position: absolute;
   bottom: 0;
@@ -128,10 +144,13 @@ a {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.techniqueMain .carousel-item__container__title {
+.techniqueMain .carousel__container .carousel-item__container__title {
   font-weight: 400;
   text-align: center;
   color: #FBFAEC;
+}
+.techniqueMain .carousel__container .carousel-item:last-of-type {
+  transform-origin: center right;
 }
 .techniqueMain__image {
   width: 100%;
@@ -164,5 +183,18 @@ a {
   .techniqueMain__image {
     width: 70%;
     max-width: 50em;
+  }
+  .techniqueMain .carousel__container {
+    margin: 8em 0;
+  }
+  .techniqueMain .carousel__container .carousel-item:hover ~ .carousel-item {
+    transform: translate3d(10em, 0, 0);
+  }
+  .techniqueMain .carousel__container:hover .carousel-item {
+    opacity: 0.3;
+  }
+  .techniqueMain .carousel__container:hover .carousel-item.carousel-item:hover {
+    transform: scale(1.5);
+    opacity: 1;
   }
 }
