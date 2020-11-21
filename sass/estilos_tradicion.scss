@@ -35,8 +35,9 @@
     .carousel{
         position: relative;
         display: grid;
-        grid-template-columns: repeat(10, 100%);
-        align-items: flex-end;
+        grid-template-columns: repeat(13, 100%);
+        gap: 1em;
+        align-items: end;
         max-width: 60em;
         width: 100%;
         height: fit-content;
@@ -76,6 +77,34 @@
     }
     
     
+}
+
+@media only screen and (min-width: $break-mobile-M){
+    .traditionMain{
+        .carousel{
+            &-item{
+                &__container{
+                    &__title, &__description{
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $break-mobile-L){
+    .traditionMain{
+        .carousel{
+            &-item{
+                &__container{
+                    &__title, &__description{
+                        font-size: 1.4em;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: $break-mobile-tablet){
