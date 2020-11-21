@@ -64,22 +64,8 @@
                 transform-origin: center right;
 
             }
-            // .carousel-item:hover ~ .carousel-item{
-            //     transform: translate3d(10em, 0, 0);
-            // }
         }
-        // &__container:hover .carousel-item{
-        //     opacity: 0.3;
-        // }
-        // &__container:hover .carousel-item.carousel-item:hover{
-        //     transform: scale(1.5);
-        //     opacity: 1;
-        // }
     }
-    
-    // img{
-    //     width: 100px;
-    // }
 }
 
 @media only screen and (min-width: $break-mobile-tablet){

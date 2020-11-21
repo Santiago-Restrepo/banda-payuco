@@ -79,8 +79,61 @@ a {
 .traditionMain__description p {
   line-height: 1.4em;
 }
-.traditionMain img {
-  width: 100px;
+.traditionMain .carousel::-webkit-scrollbar {
+  height: 1em;
+  padding: 0.1em 0;
+  border-radius: 1em;
+  background-color: #baa7b8;
+}
+.traditionMain .carousel::-webkit-scrollbar-thumb {
+  border-radius: 1em;
+  background-color: #33B5B0;
+}
+.traditionMain .carousel {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(10, 100%);
+  align-items: flex-end;
+  max-width: 60em;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 2em;
+}
+.traditionMain .carousel-item {
+  position: relative;
+  scroll-snap-align: center;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.traditionMain .carousel-item__image {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+.traditionMain .carousel-item__container {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.traditionMain .carousel-item__container__title, .traditionMain .carousel-item__container__description {
+  text-align: center;
+  color: #FBFAEC;
 }
 
 @media only screen and (min-width: 597px) {
@@ -90,6 +143,9 @@ a {
   .traditionMain__description {
     width: 85%;
     max-width: 60em;
+  }
+  .traditionMain .carousel-item__container__title, .traditionMain .carousel-item__container__description {
+    font-size: 1.6em;
   }
 }
 @media only screen and (min-width: 1024px) {

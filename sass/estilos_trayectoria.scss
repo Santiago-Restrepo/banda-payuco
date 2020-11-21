@@ -44,7 +44,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5em 0;
+    padding: 5em 2.5em;
     text-align: center;
     // background-color: $Color-negro-claro;
     background-image: url("../images/fondo2.png");
@@ -62,8 +62,57 @@
         line-height: 1.3em;
         color: $Color-blanco;
     }
-    img{
-        width: 50px;
+    &__subtitle{
+        margin-top: 1.5em;
+        color: $Color-blanco;
+
+    }
+
+    .carousel::-webkit-scrollbar{
+        height: 1em;
+        padding: .1em 0;
+        border-radius: 1em;
+        background-color: $Color-gris-morado;
+    }
+    .carousel::-webkit-scrollbar-thumb{
+        border-radius: 1em;
+        background-color: $Color-morado-primario;
+    }
+    .carousel{
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 90%;
+        max-width: 100em;
+        padding: 3em;
+        overflow: scroll;
+        overflow-y: hidden;
+        &__container{
+            width: 100%;
+            white-space: nowrap;
+            padding: 0 2em 1em;            
+            user-select: none;
+            .carousel-item{
+                display: inline-block;
+                margin-right: 1em;
+                max-width: 30em;
+                width: 100%;
+                background-color: lightcoral;
+                overflow: hidden;
+                transition: .5s all;
+                transform-origin: center left;
+                height: fit-content;
+                user-select: none;
+                box-shadow: 0 1em 5em $Color-morado-primario;
+                img{
+                    width: 100%;
+                }
+            }
+            .carousel-item:last-of-type{
+                transform-origin: center right;
+
+            }
+        }
     }
 }
 
@@ -82,6 +131,24 @@
             &-img{
                 width: 80%;
                 margin-bottom: 5em;
+            }
+        }
+        
+    }
+    .storyTelling{
+        .carousel{
+            &__container{
+                margin: 8em 0;
+                .carousel-item:hover ~ .carousel-item{
+                    transform: translate3d(10em, 0, 0);
+                }
+            }
+            &__container:hover .carousel-item{
+                opacity: 0.3;
+            }
+            &__container:hover .carousel-item.carousel-item:hover{
+                transform: scale(1.5);
+                opacity: 1;
             }
         }
     }

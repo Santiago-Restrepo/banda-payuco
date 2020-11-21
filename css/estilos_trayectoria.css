@@ -216,7 +216,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5em 0;
+  padding: 5em 2.5em;
   text-align: center;
   background-image: url("../images/fondo2.png");
   background-attachment: fixed;
@@ -233,8 +233,58 @@ a {
   line-height: 1.3em;
   color: #FBFAEC;
 }
-.storyTelling img {
-  width: 50px;
+.storyTelling__subtitle {
+  margin-top: 1.5em;
+  color: #FBFAEC;
+}
+.storyTelling .carousel::-webkit-scrollbar {
+  height: 1em;
+  padding: 0.1em 0;
+  border-radius: 1em;
+  background-color: #baa7b8;
+}
+.storyTelling .carousel::-webkit-scrollbar-thumb {
+  border-radius: 1em;
+  background-color: #8F3088;
+}
+.storyTelling .carousel {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 90%;
+  max-width: 100em;
+  padding: 3em;
+  overflow: scroll;
+  overflow-y: hidden;
+}
+.storyTelling .carousel__container {
+  width: 100%;
+  white-space: nowrap;
+  padding: 0 2em 1em;
+  -webkit-user-select: none;
+          user-select: none;
+}
+.storyTelling .carousel__container .carousel-item {
+  display: inline-block;
+  margin-right: 1em;
+  max-width: 30em;
+  width: 100%;
+  background-color: lightcoral;
+  overflow: hidden;
+  transition: 0.5s all;
+  transform-origin: center left;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-user-select: none;
+          user-select: none;
+  box-shadow: 0 1em 5em #8F3088;
+}
+.storyTelling .carousel__container .carousel-item img {
+  width: 100%;
+}
+.storyTelling .carousel__container .carousel-item:last-of-type {
+  transform-origin: center right;
 }
 
 @media only screen and (min-width: 597px) {
@@ -251,6 +301,20 @@ a {
   .trajectoryMain__container-img {
     width: 80%;
     margin-bottom: 5em;
+  }
+
+  .storyTelling .carousel__container {
+    margin: 8em 0;
+  }
+  .storyTelling .carousel__container .carousel-item:hover ~ .carousel-item {
+    transform: translate3d(10em, 0, 0);
+  }
+  .storyTelling .carousel__container:hover .carousel-item {
+    opacity: 0.3;
+  }
+  .storyTelling .carousel__container:hover .carousel-item.carousel-item:hover {
+    transform: scale(1.5);
+    opacity: 1;
   }
 }
 @media only screen and (min-width: 768px) {
