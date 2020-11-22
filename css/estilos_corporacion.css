@@ -25,7 +25,7 @@ h3, h4, h5, h6, p, a, span, button, input, small {
 }
 
 h1 {
-  font-size: 3.8em;
+  font-size: 4.5em;
 }
 
 h2 {
@@ -78,16 +78,89 @@ a {
   color: #FBFAEC;
   line-height: 1.4em;
 }
-.corporationMain iframe {
-  width: 100px;
+.corporationMain .carousel::-webkit-scrollbar {
+  height: 1em;
+  padding: 0.1em 0;
+  border-radius: 1em;
+  background-color: #545454;
+}
+.corporationMain .carousel::-webkit-scrollbar-thumb {
+  border-radius: 1em;
+  background-color: #FED031;
+}
+.corporationMain .carousel {
+  position: relative;
+  max-width: 60em;
+  display: grid;
+  grid-template-columns: repeat(9, 100%);
+  gap: 1em;
+  align-items: end;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 2em;
+}
+.corporationMain .carousel__container {
+  width: 100%;
+  white-space: nowrap;
+  padding: 0 2em 2em;
+  -webkit-user-select: none;
+          user-select: none;
+  scroll-snap-type: x mandatory;
+}
+.corporationMain .carousel__container .carousel-item {
+  scroll-snap-align: center;
+  position: relative;
+  display: inline-block;
+  margin-right: 1em;
+  max-width: 60em;
+  width: 100%;
+  transition: 0.5s all;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-user-select: none;
+          user-select: none;
+}
+.corporationMain .carousel__container .carousel-item__video {
+  width: 100%;
+}
+.corporationMain .carousel__container .carousel-item__container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #FED031;
+  border-radius: 0 0 1em 1em;
+}
+.corporationMain .carousel__container .carousel-item__container__title, .corporationMain .carousel__container .carousel-item__container__subtitle, .corporationMain .carousel__container .carousel-item__container__description {
+  width: 100%;
+  font-weight: 400;
+  text-align: center;
+  color: #141414;
+}
+.corporationMain .carousel__container .carousel-item__container__title {
+  display: block;
 }
 
-@media only screen and (min-width: 597px) {
+@media only screen and (min-width: 768px) {
   .corporationMain__title {
     margin-top: 2em;
   }
   .corporationMain__description {
     width: 85%;
     max-width: 50em;
+  }
+  .corporationMain .carousel__container .carousel-item__container {
+    padding: 3%;
   }
 }

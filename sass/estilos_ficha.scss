@@ -33,7 +33,7 @@
         grid-template-columns: repeat(4, 100%);
         gap: 1em;
         align-items: end;
-        max-width: 80em;
+        max-width: 100em;
         width: 100%;
         height: fit-content;
         overflow-x: scroll;
@@ -58,6 +58,7 @@
                 height: fit-content;
                 user-select: none;
                 box-shadow: 0 1em 5em $Color-azul-primario;
+                
                 &__image{
                     z-index: 1;
                     width: 100%;
