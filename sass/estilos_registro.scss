@@ -1,33 +1,115 @@
 @import "componentes/globales";
 
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../images/fondo1.png");
+    background-attachment: fixed;
+}
 .audioVisualMain{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: 80em;
     padding: 4em 2.5em;
-    background-image: url("../images/fondo1.png");
-    background-attachment: fixed;
+    background-color: $Color-blanco;
     &__title{
         margin-bottom: 1em;
         text-align: center;
         color: $Color-morado-primario;
     }
     &__description{
-        font-weight: 400;
+        font-weight: 300;
         text-align: center;
         color: $Color-negro;
         margin-bottom: 3em;
         line-height: 1.4em;
     }
+
     
-    iframe{
-        width: 100px;
+    .carousel::-webkit-scrollbar{
+        height: 1em;
+        padding: .1em 0;
+        border-radius: 1em;
+        background-color: $Color-gris-oscuro;
+    }
+    .carousel::-webkit-scrollbar-thumb{
+        border-radius: 1em;
+        background-color: $Color-amarillo-primario;
+    }
+    .carousel{
+        position: relative;
+        max-width: 60em;
+        width: 100%;
+        height: fit-content;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 2em;
+        &__container{
+            display: grid;
+            grid-template-columns: repeat(7,100%);
+            align-items: end;
+            gap: 1em;
+            width: 100%;
+            padding: 0 2em 2em;            
+            user-select: none;
+            scroll-snap-type: x mandatory;
+            .carousel-item{
+                position: relative;
+                display: inline-block;
+                margin-right: 1em;
+                max-width: 50em;
+                width: 100%;
+                height: fit-content;
+                padding-bottom: 2em;
+                user-select: none;
+                background-color: $Color-blanco;
+                box-shadow: 0 1em 1.5em rgba(0, 0, 0, 0.5);
+                text-align: center;
+                transition: .5s all;
+                scroll-snap-align: center;
+                border-radius: .5em .5em 0 0;
+                &__title{
+                    padding: .5em 2em;
+                    background-color: $Color-negro;
+                    color: $Color-amarillo-primario;
+                    font-weight: 300;
+                    font-family: $Fuente1;
+                    line-height: 1.3em;
+                    border-radius: .5em .5em 0 0;
+                }
+                &__video{
+                    width: 100%;
+                }
+                &__description{
+                    margin: 2em 0;
+                    padding: 0 2em;
+                    font-weight: 300;
+                    font-style: italic;
+                }
+                &__autor{
+                    padding: 0 2em;
+                    font-size: 1.2em;
+                    font-weight: 300;
+                    color: $Color-negro;
+                }
+            }
+        }
     }
 }
 
+@media only screen and (min-width: $break-mobile-M){
+    .audioVisualMain{
+        width: 90%;
+    }
+}
 @media only screen and (min-width: $break-mobile-tablet){
     .audioVisualMain{
+        width: 80%;
         &__title{
             margin-top: 3em;
         }

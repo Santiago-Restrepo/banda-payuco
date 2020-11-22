@@ -57,14 +57,24 @@ a {
   font-size: 1.2em;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/fondo1.png");
+  background-attachment: fixed;
+}
+
 .audioVisualMain {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 80em;
   padding: 4em 2.5em;
-  background-image: url("../images/fondo1.png");
-  background-attachment: fixed;
+  background-color: #FBFAEC;
 }
 .audioVisualMain__title {
   margin-bottom: 1em;
@@ -72,17 +82,97 @@ a {
   color: #8F3088;
 }
 .audioVisualMain__description {
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
   color: #141414;
   margin-bottom: 3em;
   line-height: 1.4em;
 }
-.audioVisualMain iframe {
-  width: 100px;
+.audioVisualMain .carousel::-webkit-scrollbar {
+  height: 1em;
+  padding: 0.1em 0;
+  border-radius: 1em;
+  background-color: #545454;
+}
+.audioVisualMain .carousel::-webkit-scrollbar-thumb {
+  border-radius: 1em;
+  background-color: #FED031;
+}
+.audioVisualMain .carousel {
+  position: relative;
+  max-width: 60em;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 2em;
+}
+.audioVisualMain .carousel__container {
+  display: grid;
+  grid-template-columns: repeat(7, 100%);
+  align-items: end;
+  gap: 1em;
+  width: 100%;
+  padding: 0 2em 2em;
+  -webkit-user-select: none;
+          user-select: none;
+  scroll-snap-type: x mandatory;
+}
+.audioVisualMain .carousel__container .carousel-item {
+  position: relative;
+  display: inline-block;
+  margin-right: 1em;
+  max-width: 50em;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 2em;
+  -webkit-user-select: none;
+          user-select: none;
+  background-color: #FBFAEC;
+  box-shadow: 0 1em 1.5em rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition: 0.5s all;
+  scroll-snap-align: center;
+  border-radius: 0.5em 0.5em 0 0;
+}
+.audioVisualMain .carousel__container .carousel-item__title {
+  padding: 0.5em 2em;
+  background-color: #141414;
+  color: #FED031;
+  font-weight: 300;
+  font-family: "Bad Script", sans-serif;
+  line-height: 1.3em;
+  border-radius: 0.5em 0.5em 0 0;
+}
+.audioVisualMain .carousel__container .carousel-item__video {
+  width: 100%;
+}
+.audioVisualMain .carousel__container .carousel-item__description {
+  margin: 2em 0;
+  padding: 0 2em;
+  font-weight: 300;
+  font-style: italic;
+}
+.audioVisualMain .carousel__container .carousel-item__autor {
+  padding: 0 2em;
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #141414;
 }
 
+@media only screen and (min-width: 375px) {
+  .audioVisualMain {
+    width: 90%;
+  }
+}
 @media only screen and (min-width: 597px) {
+  .audioVisualMain {
+    width: 80%;
+  }
   .audioVisualMain__title {
     margin-top: 3em;
   }
