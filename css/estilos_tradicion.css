@@ -29,6 +29,7 @@ h1 {
 }
 
 h2 {
+  line-height: 1.3em;
   font-size: 3.5em;
 }
 
@@ -57,14 +58,24 @@ a {
   font-size: 1.2em;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/fondo1.png");
+  background-attachment: fixed;
+}
+
 .traditionMain {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 4em 2.5em;
-  background-image: url("../images/fondo1.png");
-  background-attachment: fixed;
+  background-color: #FBFAEC;
+  width: 100%;
+  max-width: 90em;
 }
 .traditionMain__title {
   margin-bottom: 1em;
@@ -138,11 +149,17 @@ a {
 }
 
 @media only screen and (min-width: 375px) {
+  .traditionMain {
+    width: 90%;
+  }
   .traditionMain .carousel-item__container__title, .traditionMain .carousel-item__container__description {
     font-size: 1.2em;
   }
 }
 @media only screen and (min-width: 425px) {
+  .traditionMain {
+    width: 80%;
+  }
   .traditionMain .carousel-item__container__title, .traditionMain .carousel-item__container__description {
     font-size: 1.4em;
   }

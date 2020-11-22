@@ -1,13 +1,23 @@
 @import "componentes/globales";
 
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../images/fondo1.png");
+    background-attachment: fixed;
+}
+
 .traditionMain{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 4em 2.5em;
-    background-image: url("../images/fondo1.png");
-    background-attachment: fixed;
+    background-color: $Color-blanco;
+    width: 100%;
+    max-width: 90em;
     &__title{
         margin-bottom: 1em;
         text-align: center;
@@ -81,6 +91,7 @@
 
 @media only screen and (min-width: $break-mobile-M){
     .traditionMain{
+        width: 90%;
         .carousel{
             &-item{
                 &__container{
@@ -95,6 +106,7 @@
 
 @media only screen and (min-width: $break-mobile-L){
     .traditionMain{
+        width: 80%;
         .carousel{
             &-item{
                 &__container{

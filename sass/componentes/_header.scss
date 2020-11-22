@@ -14,6 +14,7 @@
     width: 100vw;
     height: 13vh;
     background-color: $Color-negro;
+    box-shadow: 0 1em 1em rgba(0, 0, 0, .5);
     .navbar{
         z-index: 1;
         position: absolute;
