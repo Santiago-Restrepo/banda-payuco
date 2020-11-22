@@ -102,10 +102,6 @@ body {
 .corporationMain .carousel {
   position: relative;
   max-width: 60em;
-  display: grid;
-  grid-template-columns: repeat(9, 100%);
-  gap: 1em;
-  align-items: end;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -115,8 +111,11 @@ body {
   padding-bottom: 2em;
 }
 .corporationMain .carousel__container {
+  display: grid;
+  grid-template-columns: repeat(9, 100%);
+  gap: 1em;
+  align-items: end;
   width: 100%;
-  white-space: nowrap;
   padding: 0 2em 2em;
   -webkit-user-select: none;
           user-select: none;

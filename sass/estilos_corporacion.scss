@@ -43,18 +43,17 @@ body{
     .carousel{
         position: relative;
         max-width: 60em;
-        display: grid;
-        grid-template-columns: repeat(9, 100%);
-        gap: 1em;
-        align-items: end;
         width: 100%;
         height: fit-content;
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
         padding-bottom: 2em;
         &__container{
+            display: grid;
+            grid-template-columns: repeat(9, 100%);
+            gap: 1em;
+            align-items: end;
             width: 100%;
-            white-space: nowrap;
             padding: 0 2em 2em;            
             user-select: none;
             scroll-snap-type: x mandatory;
