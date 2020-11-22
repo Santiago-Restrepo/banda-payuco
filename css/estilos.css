@@ -147,6 +147,7 @@ a {
   height: 100vh;
   padding: 3em 0;
   background-color: #141414;
+  box-shadow: 0 -1em 1em rgba(0, 0, 0, 0.5);
 }
 .footer__title {
   color: #33B5B0;

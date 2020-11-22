@@ -8,6 +8,7 @@
     height: 100vh;
     padding: 3em 0;
     background-color: $Color-negro;
+    box-shadow: 0 -1em 1em rgba(0, 0, 0, .5);
     &__title{
         color: $Color-azul-primario;
         font-weight: 400;
