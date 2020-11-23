@@ -14,11 +14,12 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4em 2.5em;
+    padding: 0 2.5em 4em;
     width: 100%;
     max-width: 90em;
     background-color: $Color-negro-oscuro;
     &__title{
+        margin-top: 2em;
         margin-bottom: 1em;
         text-align: center;
         color: $Color-amarillo-primario;
