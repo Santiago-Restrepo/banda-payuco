@@ -80,6 +80,7 @@ a {
   color: #8F3088;
   margin-bottom: 1em;
   font-weight: 500;
+  text-align: center;
 }
 .whoAreThey__description {
   text-align: center;
@@ -90,5 +91,11 @@ a {
 @media only screen and (min-width: 597px) {
   .whoAreThey__description {
     width: 30em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .whoAreThey__image {
+    width: 30em;
+    height: 30em;
   }
 }

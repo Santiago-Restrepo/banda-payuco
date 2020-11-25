@@ -166,7 +166,7 @@ body {
 }
 @media only screen and (min-width: 597px) {
   .traditionMain__title {
-    margin-top: 2em;
+    margin-top: 1.5em;
   }
   .traditionMain__description {
     width: 85%;

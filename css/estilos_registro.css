@@ -106,38 +106,29 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
   padding-bottom: 2em;
 }
 .audioVisualMain .carousel__container {
-  display: grid;
-  grid-template-columns: repeat(7, 100%);
-  align-items: end;
-  gap: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  padding: 0 2em 2em;
-  -webkit-user-select: none;
-          user-select: none;
-  scroll-snap-type: x mandatory;
 }
 .audioVisualMain .carousel__container .carousel-item {
   position: relative;
   display: inline-block;
-  margin-right: 1em;
   max-width: 50em;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   padding-bottom: 2em;
+  margin-bottom: 4em;
   -webkit-user-select: none;
           user-select: none;
   background-color: #FBFAEC;
   box-shadow: 0 1em 1.5em rgba(0, 0, 0, 0.5);
   text-align: center;
-  transition: 0.5s all;
-  scroll-snap-align: center;
   border-radius: 0.5em 0.5em 0 0;
 }
 .audioVisualMain .carousel__container .carousel-item__title {
@@ -175,7 +166,7 @@ body {
     width: 80%;
   }
   .audioVisualMain__title {
-    margin-top: 3em;
+    margin-top: 1.5em;
   }
   .audioVisualMain__description {
     width: 70%;

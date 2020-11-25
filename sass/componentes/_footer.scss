@@ -2,24 +2,13 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     width: 100vw;
     height: 100vh;
     padding: 3em 0;
     background-color: $Color-negro;
     box-shadow: 0 -1em 1em rgba(0, 0, 0, .5);
-    &__title{
-        color: $Color-azul-primario;
-        font-weight: 400;
-    }
-    .socialMedia{
-        display: flex;
-        width: 10em;
-        justify-content: space-between;
-        background-color: transparent;
-        box-shadow: none;
-    }
     .rights{
         color: $Color-blanco;
         font-size: 1.3em;

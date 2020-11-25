@@ -11,6 +11,7 @@
     <Header class="header">
       <nav class="navbar">
         <ul>
+          <li class="inicio__button"><a href="index.html">INICIO</a></li>
           <li><a href="html/Desarrollo_trabajo.html">DESARROLLO DEL TRABAJO</a></li>
           <li><a href="html/historia.html">HISTORIA</a></li>
           <li><a href="html/tradicion_religiosa.html">TRADICIÓN RELIGIOSA</a></li>
@@ -24,31 +25,25 @@
         <h4 class="hero__title-secundary">Una tradición del oriente antioqueño</h4>
       </div>
       <div class="hero__subtitle">
-        <h4 class="hero__subtitle-names">Miguel Gonzalez Gonzalez <br> Mateo Uribe Bermúdez</h4>
+        <h4 class="hero__subtitle-names">Miguel Santiago Gonzalez Gonzalez <br> Mateo Uribe Bermúdez</h4>
       </div>
     </div>
     <main class="whoAreThey">
       <div class="whoAreThey__image"></div>
-      <h2 class="whoAreThey__title">¿Quiénes son?</h2>
-      <p class="whoAreThey__description">
-        La Banda de Payuco de La Ceja del Tambo Antioquia – Colombia, es una banda tradicional cuyo 
-        legado es mantener viva la música tradicional colombiana en 
-        este formato de bandas tradicionales, además de ser una 
-        banda familiar; la mayoría de los hijos, nietos y bisnietos hoy 
-        nutren las bandas sinfónicas de la región. Son la gran familia 
-        musical de la Banda de Payuco.
-      </p>
+      <h2 class="whoAreThey__title">La Banda de Payuco</h2>
+      <p class="whoAreThey__description">La Banda de Payuco nace y se mantiene vigente en el municipio de La Ceja del Tambo, en el departamento de Antioquia en Colombia, desde hace ya más de cinco décadas. Se trata de una banda tradicional, cuya misión ha sido mantener vivos los aires de la música colombiana y engalanar los eventos de carácter religioso que se celebran año tras año en esa región del oriente antioqueño. Cuenta con un formato de banda tradicional, compuesta en su mayoría por miembros de una familia muy reconocida en el municipio de La Ceja: la familia López. Abuelos, padres, hijos, nietos y bisnietos de esta familia hacen parte hoy en día, no sólo de la Banda de Payuco, sino de las demás bandas sinfónicas de la región, así como de diferentes agrupaciones nacionales e internacionales. </p>
     </main>
-    <footer class="footer">
-      <h1 class="footer__title">Contáctanos</h1>
-      <nav class="socialMedia"><span><a href="https://www.facebook.com/Bandapayuco"><img src="images/logo-de-facebook.svg" alt=""/></a></span><span><a href="https://www.instagram.com/corporacionbandadepayuco/?hl=es-la"><img src="images/logotipo-de-instagram.svg" alt=""/></a></span></nav><span class="rights">© Trabajo de grado Banda Payuco</span>
-    </footer>
+    <footer class="footer"><span class="rights">© Trabajo de grado Banda Payuco</span></footer>
     <script>
+      const $BUTTON_ACTIVE =document.querySelector('.inicio__button')
       const $menu = document.querySelector('.navbar');
       const $button = document.querySelector('.hamburguer__menu > img');
       
       $button.addEventListener('click',hideshow);
       
+      function active_button(){
+          $BUTTON_ACTIVE.classList.add('active-page');
+      }
       function hideshow(){
           if($menu.classList.contains('is-active')){
               $menu.classList.remove('is-active');
@@ -58,6 +53,7 @@
               $button.setAttribute('src', 'images/boton-eliminar.svg')
           }
       }
+      active_button();
     </script>
   </body>
 </html>

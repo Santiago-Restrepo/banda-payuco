@@ -46,32 +46,24 @@ body{
         max-width: 60em;
         width: 100%;
         height: fit-content;
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
         padding-bottom: 2em;
         &__container{
-            display: grid;
-            grid-template-columns: repeat(7,100%);
-            align-items: end;
-            gap: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             width: 100%;
-            padding: 0 2em 2em;            
-            user-select: none;
-            scroll-snap-type: x mandatory;
             .carousel-item{
                 position: relative;
                 display: inline-block;
-                margin-right: 1em;
                 max-width: 50em;
                 width: 100%;
                 height: fit-content;
                 padding-bottom: 2em;
+                margin-bottom: 4em;
                 user-select: none;
                 background-color: $Color-blanco;
                 box-shadow: 0 1em 1.5em rgba(0, 0, 0, 0.5);
                 text-align: center;
-                transition: .5s all;
-                scroll-snap-align: center;
                 border-radius: .5em .5em 0 0;
                 &__title{
                     padding: .5em 2em;
@@ -111,7 +103,7 @@ body{
     .audioVisualMain{
         width: 80%;
         &__title{
-            margin-top: 3em;
+            margin-top: 1.5em;
         }
         &__description{
             width: 70%;

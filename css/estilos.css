@@ -131,34 +131,24 @@ a {
 }
 .hero__title-secundary {
   color: #3A3A3A;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 2em;
 }
 .hero__subtitle-names {
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .footer {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   width: 100vw;
   height: 100vh;
   padding: 3em 0;
   background-color: #141414;
   box-shadow: 0 -1em 1em rgba(0, 0, 0, 0.5);
-}
-.footer__title {
-  color: #33B5B0;
-  font-weight: 400;
-}
-.footer .socialMedia {
-  display: flex;
-  width: 10em;
-  justify-content: space-between;
-  background-color: transparent;
-  box-shadow: none;
 }
 .footer .rights {
   color: #FBFAEC;

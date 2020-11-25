@@ -78,7 +78,7 @@ body {
   background-color: #111111;
 }
 .corporationMain__title {
-  margin-top: 2em;
+  margin-top: 1em;
   margin-bottom: 1em;
   text-align: center;
   color: #FED031;
@@ -107,17 +107,12 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
   padding-bottom: 2em;
 }
 .corporationMain .carousel__container {
-  display: grid;
-  grid-template-columns: repeat(9, 100%);
-  gap: 1em;
-  align-items: end;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  padding: 0 2em 2em;
   -webkit-user-select: none;
           user-select: none;
   scroll-snap-type: x mandatory;
@@ -127,12 +122,13 @@ body {
   position: relative;
   display: inline-block;
   margin-right: 1em;
+  margin-bottom: 3em;
   max-width: 60em;
   width: 100%;
-  transition: 0.5s all;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  transition: 0.5s all;
   -webkit-user-select: none;
           user-select: none;
 }
@@ -175,7 +171,10 @@ body {
 }
 @media only screen and (min-width: 768px) {
   .corporationMain__title {
-    margin-top: 2em;
+    margin-top: 2.5em;
+  }
+  .corporationMain__title:nth-of-type(2), .corporationMain__title:nth-of-type(3) {
+    margin-top: 1em;
   }
   .corporationMain__description {
     width: 85%;

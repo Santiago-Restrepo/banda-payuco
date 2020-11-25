@@ -19,7 +19,7 @@ body{
     max-width: 90em;
     background-color: $Color-negro-oscuro;
     &__title{
-        margin-top: 2em;
+        margin-top: 1em;
         margin-bottom: 1em;
         text-align: center;
         color: $Color-amarillo-primario;
@@ -46,16 +46,11 @@ body{
         max-width: 60em;
         width: 100%;
         height: fit-content;
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
         padding-bottom: 2em;
         &__container{
-            display: grid;
-            grid-template-columns: repeat(9, 100%);
-            gap: 1em;
-            align-items: end;
+            display: flex;
+            flex-direction: column;
             width: 100%;
-            padding: 0 2em 2em;            
             user-select: none;
             scroll-snap-type: x mandatory;
             .carousel-item{
@@ -63,10 +58,11 @@ body{
                 position: relative;
                 display: inline-block;
                 margin-right: 1em;
+                margin-bottom: 3em;
                 max-width: 60em;
                 width: 100%;
-                transition: .5s all;
                 height: fit-content;
+                transition: .5s all;
                 user-select: none;
                 &__video{
                     width: 100%;
@@ -111,7 +107,10 @@ body{
 @media only screen and (min-width: $break-tablet){
     .corporationMain{
         &__title{
-            margin-top: 2em;
+            margin-top: 2.5em;
+        }
+        &__title:nth-of-type(2), &__title:nth-of-type(3){
+            margin-top: 1em;  
         }
         &__description{
             width: 85%;
