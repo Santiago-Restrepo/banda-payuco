@@ -164,6 +164,8 @@ body {
     opacity: 0.3;
   }
   .heritageMain .carousel__container:hover .carousel-item.carousel-item:hover {
+    position: relative;
+    z-index: 1;
     transform: scale(1.5);
     opacity: 1;
   }
