@@ -78,6 +78,7 @@ body {
   max-width: 90em;
 }
 .traditionMain__title {
+  margin-top: 0.5em;
   margin-bottom: 1em;
   text-align: center;
   color: #8F3088;

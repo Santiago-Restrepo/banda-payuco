@@ -19,9 +19,9 @@ body{
     width: 100%;
     max-width: 90em;
     &__title{
+        margin-top: .5em;
         margin-bottom: 1em;
         text-align: center;
-        
         color: $Color-morado-primario;
     }
     &__description{
